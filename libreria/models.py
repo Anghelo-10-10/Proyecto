@@ -48,7 +48,7 @@ class Client(models.Model):
 class Product(models.Model):
     code = models.CharField(max_length=10, null=False, unique=True)
     book_title = models.CharField(max_length=200, null=False)
-    year = models.CharField(null=False)
+    year = models.CharField(max_length=200, null=False)
     author = models.CharField(max_length=75, null=False)
     publisher = models.CharField(max_length=75, null=False)
     category = models.ForeignKey(Category, on_delete=models.CASCADE)

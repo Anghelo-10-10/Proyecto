@@ -7,7 +7,6 @@ from django.contrib.auth.decorators import login_required
 from libreria.forms import ClientForm, CategoryForm, ProductForm, PurchaseForm, PurchaseDetailForm
 from django.contrib import messages
 from django.utils import timezone
-import pytz
 class CustomLoginView(LoginView):
     template_name = 'login.html'
 
